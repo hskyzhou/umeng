@@ -21,6 +21,13 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     	$this->publishes([
     		__DIR__ . '/../config/umeng.php' => config_path('umeng.php'),
     	], 'config');
+
+    	/*绑定*/
+    	// $this->app->singleton('appnotification', function($app){
+    	// 	return new AppNotification();
+    	// });
+
+    	$this->app->singleton('appnotification', AppNotification::class);
     }
 
     /* bind Service container*/

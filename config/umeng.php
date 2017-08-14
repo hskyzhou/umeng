@@ -16,7 +16,6 @@ return [
 	'ios' => [
 		'app_key' => '',
 		'app_master_secret' => '',
-		'umeng_master_secret' => '',
 	],
 
 	'api' => [
