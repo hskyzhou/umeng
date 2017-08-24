@@ -3,6 +3,8 @@ namespace HskyZhou\Umeng\Pusher;
 
 use HskyZhou\Umeng\Contracts\PusherContract;
 
+use Exception;
+
 class IosPusher extends Pusher implements PusherContract
 {
 	// The array for payload, please see API doc for more information
